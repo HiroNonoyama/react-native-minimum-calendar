@@ -1,0 +1,23 @@
+{
+  "name": "react-native-simple-calendar",
+  "version": "1.0.0",
+  "description": "simple calendar component for react native",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirononoyama/react-native-simple-calendar.git"
+  },
+  "keywords": [
+    "react",
+    "native"
+  ],
+  "author": "HiroNonoyama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hirononoyama/react-native-simple-calendar/issues"
+  },
+  "homepage": "https://github.com/hirononoyama/react-native-simple-calendar#readme"
+}
