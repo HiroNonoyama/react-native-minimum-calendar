@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/hirononoyama/react-native-simple-calendar/issues"
   },
-  "homepage": "https://github.com/hirononoyama/react-native-simple-calendar#readme"
+  "homepage": "https://github.com/hirononoyama/react-native-simple-calendar#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-native": "^0.52.0"
+  }
 }
