@@ -1,5 +1,5 @@
 {
-  "name": "react-native-simple-calendar",
+  "name": "react-native-minimum-calendar",
   "version": "1.0.1",
   "description": "simple calendar component for react native",
   "main": "index.js",
@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hirononoyama/react-native-simple-calendar.git"
+    "url":
+      "git+https://github.com/hirononoyama/react-native-minimum-calendar.git"
   },
-  "keywords": [
-    "react",
-    "native"
-  ],
+  "keywords": ["react", "native"],
   "author": "HiroNonoyama",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hirononoyama/react-native-simple-calendar/issues"
+    "url":
+      "https://github.com/hirononoyama/react-native-minimum-calendar/issues"
   },
-  "homepage": "https://github.com/hirononoyama/react-native-simple-calendar#readme",
+  "homepage":
+    "https://github.com/hirononoyama/react-native-minimum-calendar#readme",
   "devDependencies": {
     "react": "^16.2.0",
     "react-native": "^0.52.0"
