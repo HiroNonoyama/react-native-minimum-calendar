@@ -1,1 +1,1 @@
-export const API_KEY = ""; // add your google api_key
+export const API_KEY = "AIzaSyDlhTmvDl7zNwLBXNWSaHhEgwKmpjETnbw";
