@@ -1,20 +1,20 @@
 import { View, StyleSheet, Modal } from "react-native";
 import React, { PureComponent } from "react";
-import CalendarBody from "../component/calendarBody";
-import CalendarHeader from "../component/calendarHeader";
-import { API_KEY } from "../../env";
+import CalendarBody from "./component/calendarBody";
+import CalendarHeader from "./component/calendarHeader";
+import { API_KEY } from "./env";
 
 const holidayCountryCode = {
   jp: "japanese",
   us: "usa",
   spain: "spain",
-  china: "china"
+  china: "china",
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "white"
-  }
+    backgroundColor: "white",
+  },
 });
 
 export default class Calendar extends PureComponent {
@@ -27,7 +27,7 @@ export default class Calendar extends PureComponent {
       doublePressModal: false,
       singlePressModal: false,
       pressedDay: null,
-      pressedDayPlans: {}
+      pressedDayPlans: {},
     };
     this.changeMonth = this.changeMonth.bind(this);
     this.goToToday = this.goToToday.bind(this);
@@ -38,9 +38,9 @@ export default class Calendar extends PureComponent {
   componentWillMount() {
     if (this.props.holiday) {
       fetch(
-        `https://www.googleapis.com/calendar/v3/calendars/${holidayCountryCode[
-          this.props.holiday
-        ]}@holiday.calendar.google.com/events?key=${API_KEY}`
+        `https://www.googleapis.com/calendar/v3/calendars/${
+          holidayCountryCode[this.props.holiday]
+        }@holiday.calendar.google.com/events?key=${API_KEY}`
       )
         .then(res => {
           const holidays = JSON.parse(res._bodyText).items;
@@ -57,7 +57,7 @@ export default class Calendar extends PureComponent {
     const today = new Date();
     this.setState({
       month: today.getMonth() + 1,
-      year: today.getFullYear()
+      year: today.getFullYear(),
     });
   }
 
@@ -75,7 +75,7 @@ export default class Calendar extends PureComponent {
     this.setState({
       pressedDay: obj ? obj.day : null,
       pressedDayPlans: obj ? obj.plans : null,
-      doublePressModal: !this.state.doublePressModal
+      doublePressModal: !this.state.doublePressModal,
     });
   }
 
@@ -83,7 +83,7 @@ export default class Calendar extends PureComponent {
     this.setState({
       pressedDay: obj ? obj.day : null,
       pressedDayPlans: obj ? obj.plans : null,
-      singlePressModal: !this.state.singlePressModal
+      singlePressModal: !this.state.singlePressModal,
     });
   }
 
@@ -94,7 +94,7 @@ export default class Calendar extends PureComponent {
       <View
         style={[
           styles.container,
-          { width: this.props.width, height: this.props.height }
+          { width: this.props.width, height: this.props.height },
         ]}
       >
         <CalendarHeader
