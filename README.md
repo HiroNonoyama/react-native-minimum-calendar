@@ -4,7 +4,7 @@ This package provides a simple calendar component which you can extend.
 usage example
 ```jsx
 import React from 'react';
-improt { View, Dimension } from 'react-native';
+import { View, Dimension } from 'react-native';
 import Calendar from 'react-native-minimum-calendar';
 import DayCell from '<path to component you define>';
 import AddPlanModal from '<path to comopent you define>';
